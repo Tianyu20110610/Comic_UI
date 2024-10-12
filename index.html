@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Comic Book
+        </title>
+        <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+        
+        <script src="page-controls.js"></script>
+    </head>
+    <body>
+        <a-scene background="color:#d471aa">
+            <a-camera wasd-controls-enabled="false"></a-camera>
+        <a-assets>
+            <img id="1" src="assets/Page1.jpg">
+            <img id="2" src="assets/Page2.jpg">
+            <img id="3" src="assets/Page3.jpg">
+            <img id="4" src="assets/Page4.jpg">
+            <img id="5" src="assets/Page5.jpg">
+        </a-assets>
+        <a-entity layer="src:#1; height:3; width:1.9;" page-controls></a-entity>
+        </a-scene>
+    </body>
+</html>
